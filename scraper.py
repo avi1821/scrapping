@@ -17,7 +17,7 @@ class Scraper:
 
     def fetch_page(self, page_number: int, retry_count: int = 0) -> Optional[str]:
         if retry_count > 2:
-            notify.error(f"Error fetching page after retires {page_number}: {e}")
+            notify.error(f"Error fetching page after retires {page_number}")
             return None
         try:
             url = f"{self.base_url}/"
