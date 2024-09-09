@@ -10,7 +10,6 @@ from notification import notify
 app = FastAPI()
     
 def verify_token(authorization: Optional[str] = Header(None)):
-    print(authorization)
     if authorization is None or authorization != f"Bearer {TOKEN}":
         raise HTTPException(status_code=401, detail="Unauthorized")
 
