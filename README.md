@@ -18,4 +18,4 @@ can find api in app.py
 
 `/scrape/` endpoint is used for scrapping which takes two optional parameters `page_limit` and `proxy` for scrapping
 
-currently scrapper retries 3 times on fail with a gap on 2sec each before giving error
+currently scrapper retries 3 times on fail with a gap of 2sec each before giving error
